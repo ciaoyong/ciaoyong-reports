@@ -120,8 +120,9 @@ tbody tr:hover td{background:var(--hair2)}
 .funnel-value{fill:var(--ink);font-size:19px;font-weight:820;letter-spacing:-.02em}
 .funnel-unit{font-size:11.5px;font-weight:650;fill:var(--muted);letter-spacing:0}
 .funnel-month-text{font-size:11px;font-weight:650;fill:var(--muted)}
-/* 下一步觀察＝選題段：手機隱藏、桌機保留（2026-07-24 Ming） */
-@media (max-width:719px){.analysis-next{display:none}}
+/* 下一步觀察＝選題段：置於整頁最底，桌機手機皆顯示（2026-07-24 Ming） */
+.next-obs{margin-top:22px;border-top:2px solid var(--hair)}
+.next-obs>.panel-t{font-size:15px;color:var(--ink)}
 .mk-hot a{color:var(--ink2);text-decoration:underline;text-underline-offset:2px}
 .market-count{min-width:0;width:auto}
 .market-count td.q{max-width:none}
@@ -292,7 +293,7 @@ Google 商家檔 6 月來電 7 通，是整份報表<b>離成交最近的數字<
     <div><h2>同業與市場掃描</h2><p>2026-07 · 月資料降級顯示</p></div>
     <span class="band-tag">市場</span>
   </header>
-  <div class="baseline-note"><b>首次掃描・不計入</b><span>京喆麗日式乾洗、家必潔專業清潔、家適美居家清潔、弘友清潔、彩虹機器清潔工坊、愛潔淨居家清潔、松潔 SOJ、楊格實業、洋美環境維護、洗潔家專業清潔、綠的地毯清潔、鉅崴地毯清潔；本次只建立 URL baseline，未灌入新文總數。</span></div>
+  <div class="baseline-note"><b>首次掃描・不計入</b><span>綠的地毯清潔、彩虹機器清潔工坊、洋美環境維護、弘友清潔、家必潔專業清潔、京喆麗日式乾洗、洗潔家專業清潔、家適美居家清潔、鉅崴地毯清潔、松潔 SOJ、楊格實業、愛潔淨居家清潔；本次只建立 URL baseline，未灌入新文總數。</span></div>
   <div class="kpis">
     <div class="kpi"><div class="kpi-l">掃描同業</div><div class="kpi-v">12</div><span class="chip flat">家</span></div>
     <div class="kpi"><div class="kpi-l">同業本月新文</div><div class="kpi-v">0</div><span class="chip flat">真增量</span></div>
@@ -300,12 +301,13 @@ Google 商家檔 6 月來電 7 通，是整份報表<b>離成交最近的數字<
     <div class="kpi"><div class="kpi-l">我們沒排到的字</div><div class="kpi-v">24</div><span class="chip new">選題機會</span></div>
   </div>
   <div class="panel"><div class="panel-t">各同業本月新文數</div>
-    <table class="market-count"><thead><tr><th>同業</th><th class="n">本月新文</th></tr></thead><tbody><tr><td class="q">京喆麗日式乾洗</td><td class="n">0</td></tr><tr><td class="q">家必潔專業清潔</td><td class="n">0</td></tr><tr><td class="q">家適美居家清潔</td><td class="n">0</td></tr><tr><td class="q">弘友清潔</td><td class="n">0</td></tr><tr><td class="q">彩虹機器清潔工坊</td><td class="n">0</td></tr><tr><td class="q">愛潔淨居家清潔</td><td class="n">0</td></tr><tr><td class="q">松潔 SOJ</td><td class="n">0</td></tr><tr><td class="q">楊格實業</td><td class="n">0</td></tr><tr><td class="q">洋美環境維護</td><td class="n">0</td></tr><tr><td class="q">洗潔家專業清潔</td><td class="n">0</td></tr><tr><td class="q">綠的地毯清潔</td><td class="n">0</td></tr><tr><td class="q">鉅崴地毯清潔</td><td class="n">0</td></tr></tbody></table></div>
+    <table class="market-count"><thead><tr><th>同業</th><th class="n">本月新文</th><th class="n">累積文章數</th></tr></thead><tbody><tr><td class="q">綠的地毯清潔</td><td class="n">0</td><td class="n">86</td></tr><tr><td class="q">彩虹機器清潔工坊</td><td class="n">0</td><td class="n">80</td></tr><tr><td class="q">洋美環境維護</td><td class="n">0</td><td class="n">80</td></tr><tr><td class="q">弘友清潔</td><td class="n">0</td><td class="n">41</td></tr><tr><td class="q">家必潔專業清潔</td><td class="n">0</td><td class="n">35</td></tr><tr><td class="q">京喆麗日式乾洗</td><td class="n">0</td><td class="n">34</td></tr><tr><td class="q">洗潔家專業清潔</td><td class="n">0</td><td class="n">33</td></tr><tr><td class="q">家適美居家清潔</td><td class="n">0</td><td class="n">29</td></tr><tr><td class="q">鉅崴地毯清潔</td><td class="n">0</td><td class="n">19</td></tr><tr><td class="q">松潔 SOJ</td><td class="n">0</td><td class="n">18</td></tr><tr><td class="q">楊格實業</td><td class="n">0</td><td class="n">13</td></tr><tr><td class="q">愛潔淨居家清潔</td><td class="n">0</td><td class="n">1</td></tr></tbody></table></div>
   <div class="panel"><div class="panel-t">本月新文章 <span>標題可點開原文</span></div>
     <div class="market-news"><div class="sc-empty">本期沒有偵測到可計入的新文章</div></div></div>
   <div class="panel"><div class="panel-t">別人在搜、我們還沒排到的字 <span>內容選題的現成機會</span></div>
     <div class="seed-block"><div class="panel-t">地毯清洗 <span>10 個</span></div><div class="chips"><span class="kchip">地毯清洗</span><span class="kchip">地毯清洗價格</span><span class="kchip">地毯清洗公司</span><span class="kchip">地毯清洗劑</span><span class="kchip">地毯清洗方式</span><span class="kchip">地毯清洗機</span><span class="kchip">地毯清洗機ptt</span><span class="kchip">地毯清洗機出租</span><span class="kchip">地毯清洗機推薦</span><span class="kchip">地毯清洗費用</span></div></div><div class="seed-block"><div class="panel-t">玩偶清洗 <span>8 個</span></div><div class="chips"><span class="kchip">jellycat 玩偶清洗</span><span class="kchip">台南 玩偶清洗</span><span class="kchip">玩偶清洗</span><span class="kchip">玩偶清洗 台中</span><span class="kchip">玩偶清洗 台北</span><span class="kchip">玩偶清洗 高雄</span><span class="kchip">玩偶清洗店</span><span class="kchip">玩偶清洗方法</span></div></div><div class="seed-block"><div class="panel-t">駐點清潔 <span>6 個</span></div><div class="chips"><span class="kchip">新竹 駐點清潔</span><span class="kchip">駐點清潔</span><span class="kchip">駐點清潔 台中</span><span class="kchip">駐點清潔人員</span><span class="kchip">駐點清潔公司</span><span class="kchip">駐點清潔費用</span></div></div></div>
 </section>
+
 <div class="foot">資料來源：Google Search Console／Analytics／Meta／Google 商家檔（唯讀）· 喬雍與好室分開統計、不混在一起 · <a href="weekly/">歷期報表</a></div>
 </div>
 <script>
